@@ -1,0 +1,90 @@
+
+<div class="w-100 h-30 flex-column header-background admin-background">
+        <div class="w-100 h-30 p-2 d-flex align-items-center">
+            <img src="../img/Logo.png" width="125px">
+            <nav class="navbar  ms-auto flex-row">
+                <div class="flex-grow-1">
+                    <a class="navbar-brand navbar-element" href="/">TRANG CHỦ</a>
+                </div>
+                <div class="flex-grow-1">
+                    <a class="navbar-brand navbar-element" href="/tai-khoan">TÀI KHOẢN</a>
+                </div>
+                <div class="flex-grow-1">
+                    <a class="navbar-brand navbar-element" href="/danh-sach-nhan-vien">NHÂN VIÊN</a>
+                </div>
+                <div class="flex-grow-1">
+                    <a class="navbar-brand navbar-element" href="/danh-sach-sinh-vien">SINH VIÊN</a>
+                </div>
+                <div class="flex-grow-1">
+                    <a class="navbar-brand navbar-element" href="/danh-sach-phong">PHÒNG</a>
+                </div>
+                <div class="flex-grow-1">
+                    <a class="navbar-brand navbar-element" href="#">HÓA ĐƠN</a>
+                </div>
+                <div class="flex-grow-1">
+                    <a class="navbar-brand navbar-element" href="#">THIẾT BỊ</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+<h4 class="text-center ms-5 mt-5 fw-bold">Danh sách tài khoản</h4>
+<div class="card m-5">
+    <div class="card-body" style="width: 70%; font-size: 14px;">
+        <div class="d-flex container-fluid" style="flex: 3; ">
+            <form class="d-flex mb-3 me-3 w-35"
+                  action="#"
+                  method="get"
+            >
+
+                <input class="form-control me-2 mb-0" type="search" placeholder="Tìm kiếm" aria-label="Search" name="keyword">
+                <button class="btn btn-outline-success"  style="font-size: 13px;" type="submit">Search</button>
+            </form>
+            <select class="form-select form-select-lg mb-3 mx-3 w-15" style="font-size: 13px;">
+                <option selected>Loại tài khoản</option>
+                <option value="1">Admin</option>
+                <option value="2">Employee</option>
+            </select>
+        </div>
+    </div>
+    <table id="myTable">
+        <thead>
+        <tr>
+            <th></th>
+            <th>
+                Username
+            </th>
+            <th>
+                Account type
+            </th>
+            <th style="text-align: center">Hành động</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                <input type="checkbox">
+            </td>
+            <td></td>
+            <td></td>
+            <td class="view">
+                <div class="action-container">
+                    <div class="view">
+                        <i  class="bi bi-eye-fill"></i>
+                    </div>
+                    <div class="add">
+                        <a href="#">
+                            <i class="bi bi-pen-fill"></i>
+                        </a>
+                    </div>
+                    <div class="remove">
+                        <a href="#">
+                            <i href="#" class="bi bi-trash-fill"></i>
+                        </a>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>

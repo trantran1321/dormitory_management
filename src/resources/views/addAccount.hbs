@@ -1,0 +1,68 @@
+
+<div class="w-100 h-30 flex-column header-background admin-background">
+        <div class="w-100 h-30 p-2 d-flex align-items-center">
+            <img src="../img/Logo.png" width="125px">
+            <nav class="navbar  ms-auto flex-row">
+                <div class="flex-grow-1">
+                    <a class="navbar-brand navbar-element" href="/">TRANG CHỦ</a>
+                </div>
+                <div class="flex-grow-1">
+                    <a class="navbar-brand navbar-element" href="/tai-khoan">TÀI KHOẢN</a>
+                </div>
+                <div class="flex-grow-1">
+                    <a class="navbar-brand navbar-element" href="/danh-sach-nhan-vien">NHÂN VIÊN</a>
+                </div>
+                <div class="flex-grow-1">
+                    <a class="navbar-brand navbar-element" href="/danh-sach-sinh-vien">SINH VIÊN</a>
+                </div>
+                <div class="flex-grow-1">
+                    <a class="navbar-brand navbar-element" href="/danh-sach-phong">PHÒNG</a>
+                </div>
+                <div class="flex-grow-1">
+                    <a class="navbar-brand navbar-element" href="#">HÓA ĐƠN</a>
+                </div>
+                <div class="flex-grow-1">
+                    <a class="navbar-brand navbar-element" href="#">THIẾT BỊ</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+<div class="d-flex justify-content-center ">
+  <div class="card m-5 mt-3 mb-4 w-35">
+    <form class="row g-4"
+          action="/tao-tai-khoan-admin"
+          method="post"
+    >
+      <div class="card-body p-4" style="font-size: 14px;">
+        <h6 class="card-title fw-bold">Thông tin tài khoản</h6>
+        <div class="w-80 border-bottom m-3"></div>
+        <div class="col-md-12">
+          <label  class="form-label">Email</label>
+          <input type="text" class="form-control" name="email"
+                 placeholder="Tên tài khoản" required>
+        </div>
+
+        <div class="col-md-12">
+          <label class="form-label">Mật khẩu</label>
+          <input type="password" class="form-control" name="password"
+                 placeholder="Mật khẩu " required>
+        </div>
+
+        <div class="col-md-12">
+          <label    class="form-label">Vai trò</label>
+          <select class="form-select form-select-lg" style=" font-size: 13px;" name="role">
+            <option value="admin" selected>Admin</option>
+            <option value="employee">Nhân viên</option>
+          </select>
+        </div>
+
+        <div class="col-md-12 mt-5">
+          <button class="btn btn-danger input-group mb-3 w-20 btn-orange w-100" >
+            Tạo tài khoản
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

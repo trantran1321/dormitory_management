@@ -1,0 +1,48 @@
+<div class="w-100 flex-column full-background" style="height: 90%;">
+        <div class="w-100 h-10 p-2 d-flex align-items-center">
+            <img src="../img/Logo.png" width="125px">
+            <nav class="navbar  ms-auto flex-row">
+                <div class="flex-grow-1">
+                    <a class="navbar-brand navbar-element" href="/">TRANG CHỦ</a>
+                </div>
+                <div class="flex-grow-1">
+                    <a class="navbar-brand navbar-element" href="/danh-sach-phong">PHÒNG</a>
+                </div>
+                <div class="navbar-element dropdown me-3">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        THÔNG TIN
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="navbar-element" href="/gia-ca">GIÁ CẢ</a></li>
+                        <li><a class="navbar-element" href="/thu-tuc">THỦ TỤC</a></li>
+                    </ul>
+                </div>
+                <div class="flex-grow-1">
+                    <a class="navbar-brand navbar-element" href="/lien-lac">LIÊN LẠC</a>
+                </div>
+                <div class="flex-grow-1">
+                    <a class="navbar-brand navbar-element" href="/dang-nhap">ĐĂNG NHẬP</a>
+                </div>
+            </nav>
+        </div>
+    <form class="w-100 h-75 d-flex flex-column justify-content-center align-items-center text-white"
+        action="/dang-nhap-tai-khoan" method="post">
+        <h1>ĐĂNG NHẬP</h1>
+        <div class="input-group mb-3 w-20">
+            <input type="text" class="form-control" name="email" placeholder="Email"  style="font-size: 13px; font-weight: bold;">
+        </div>
+        <div class="input-group mb-3 w-20">
+            <input type="text" class="form-control" name="password" placeholder="Password"  style="font-size: 13px; font-weight: bold;">
+            <i class="input-group-text bi bi-eye-fill" id="basic-addon1"></i>
+        </div>
+        <div class="input-group mb-3 w-20" style="background-color: rgba(1, 1, 1, 0);">
+            <input type="checkbox" >
+            <p class="m-0 ms-3"  style="font-size: 13px;">Quên mật khẩu? </p>
+        </div>
+        <button class="btn input-group mb-3 w-20" style="font-size: 13px; font-weight: bold; background-color: #FF7A00; color:#FFFFFF">
+            Đăng nhập
+        </button>
+        
+    </form>  
+</div>

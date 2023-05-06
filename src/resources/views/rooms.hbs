@@ -1,0 +1,98 @@
+
+    <div class="w-100 h-30 flex-column header-background admin-background">
+        <div class="w-100 h-30 p-2 d-flex align-items-center">
+            <img src="../img/Logo.png" width="125px">
+            <nav class="navbar  ms-auto flex-row">
+                <div class="flex-grow-1">
+                    <a class="navbar-brand navbar-element" href="/">TRANG CHỦ</a>
+                </div>
+                <div class="flex-grow-1">
+                    <a class="navbar-brand navbar-element" href="/danh-sach-phong">PHÒNG</a>
+                </div>
+                <div class="navbar-element dropdown me-3">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        THÔNG TIN
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="navbar-element" href="/gia-ca">GIÁ CẢ</a></li>
+                        <li><a class="navbar-element" href="/thu-tuc">THỦ TỤC</a></li>
+                    </ul>
+                </div>
+                <div class="flex-grow-1">
+                    <a class="navbar-brand navbar-element" href="/lien-lac">LIÊN LẠC</a>
+                </div>
+                <div class="flex-grow-1">
+                    <a class="navbar-brand navbar-element" href="/dang-nhap">ĐĂNG NHẬP</a>
+                </div>
+            </nav>
+        </div>
+        
+        <div class="w-100 h-75 d-flex flex-column justify-content-center align-items-center text-white">
+            <h1>QUẢN LÝ KÝ TÚC XÁ SINH VIÊN</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <h4 class="text-center ms-5 mt-5 fw-bold">Danh sách phòng</h4>
+        <p style="color: green; text-align: center"></p>
+        <div class="card m-5">
+            <div class="card-body" style="width: 70%; font-size: 14px;">
+                <div class="d-flex container-fluid" style="flex: 3; ">
+                    <form class="d-flex mb-3 me-3 w-35" >
+                        <input class="form-control me-2 mb-0" type="search" placeholder="Tìm kiếm" aria-label="Search">
+                        <button class="btn btn-outline-success"  style="font-size: 13px;" type="submit">Search</button>
+                    </form>
+
+                </div>
+            </div>
+            <table id="myTable">
+                <thead>
+                    <tr>
+                        <th>Tên phòng</th>
+                        <th>Loại phòng</th>
+                        <th>Số điện</th>
+                        <th>Số nước</th>
+                        <th>Số sinh viên</th>
+                        <th>Trạng thái</th>
+
+                        <th style="text-align: center">Hành động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        {{#each rooms}}
+                        <td>{{this.roomName}}</td>
+                        <td>{{this.roomType.roomName}}</td>
+                        <td>{{this.roomName}}</td>
+                        <td>{{this.roomName}}</td>
+                        <td>{{this.roomName}}</td>
+                        <td>{{this.roomName}}</td>
+
+                        <td class="view">
+                            <div class="action-container">
+                                <div class="view">
+                                    <a href="/phong/xem-chi-tiet-phong/:slug">
+                                        <i class="bi bi-eye-fill"></i>
+                                    </a>
+                                </div>
+                                <div class="add">
+                                    <a>
+                                        <i class="bi bi-pen-fill"></i>
+                                    </a>
+                                </div>
+                                <div class="remove">
+                                    <a>
+                                        <i href="#" class="bi bi-trash-fill"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </td>
+                        {{/each}}
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>

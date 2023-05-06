@@ -1,0 +1,133 @@
+
+<div class="w-100 h-30 flex-column header-background admin-background">
+        <div class="w-100 h-30 p-2 d-flex align-items-center">
+            <img src="../img/Logo.png" width="125px">
+            <nav class="navbar  ms-auto flex-row">
+                <div class="flex-grow-1">
+                    <a class="navbar-brand navbar-element" href="/">TRANG CHỦ</a>
+                </div>
+                <div class="flex-grow-1">
+                    <a class="navbar-brand navbar-element" href="/tai-khoan">TÀI KHOẢN</a>
+                </div>
+                <div class="flex-grow-1">
+                    <a class="navbar-brand navbar-element" href="/danh-sach-nhan-vien">NHÂN VIÊN</a>
+                </div>
+                <div class="flex-grow-1">
+                    <a class="navbar-brand navbar-element" href="/danh-sach-sinh-vien">SINH VIÊN</a>
+                </div>
+                <div class="flex-grow-1">
+                    <a class="navbar-brand navbar-element" href="/danh-sach-phong">PHÒNG</a>
+                </div>
+                <div class="flex-grow-1">
+                    <a class="navbar-brand navbar-element" href="#">HÓA ĐƠN</a>
+                </div>
+                <div class="flex-grow-1">
+                    <a class="navbar-brand navbar-element" href="#">THIẾT BỊ</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="d-flex align-items-center justify-content-center w-100">
+    <form class="row w-75"
+        action=""
+        method=""
+    >
+        <div class="col-xl-12 col-lg-12">
+        <div class="card m-5 mt-3">
+            <div class="card-body p-4" style="font-size: 14px;">
+            <h6 class="card-title fw-bold">Thông tin cá nhân</h6>
+            <div class="w-80 border-bottom m-3"></div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                <label    class="form-label">Họ và tên</label>
+                <input type="text" class="form-control"
+                        name="employeeName"
+                        placeholder="Nhập họ và tên">
+                </div>
+                <div class="col-md-6">
+                <label  class="form-label">CCCD</label>
+                <input type="text" class="form-control"
+                        placeholder="Nhập số CCCD" required>
+                </div>
+                <div class="col-md-6">
+                <label    class="form-label">Email</label>
+                <input type="text" class="form-control"
+                        name="email"
+                        placeholder="Nhập email"
+                        required>
+                </div>
+                <div class="col-md-6">
+                <label    class="form-label">Số điện thoại</label>
+                <input type="text" class="form-control"
+                        name="phone"
+                        placeholder="Nhập số điện thoại" required>
+                </div>
+
+                <div class="col-md-6">
+                <div class="row g-4">
+                    <div class="col-md-12">
+                    <label    class="form-label">Địa chỉ</label>
+                    <input type="text" class="form-control" name="address"
+                            placeholder="Nhập địa chỉ thường trú" required>
+                    <span class="error-span" ></span>
+                    </div>
+                    <div class="col-md-12">
+                    <label    class="form-label">File hình ảnh</label>
+                    <input type="file" class="form-control"
+
+                            placeholder="Nhập file hình ảnh" required>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-6">
+                <div class="row g-4">
+                    <div class="col-md-5">
+                    <label    class="form-label">Ngày sinh</label>
+                    <input type="date" class="form-control" name="birthday"
+                            required>
+                    </div>
+                    <div class="col-md-6 ms-4">
+                    <label    class="form-label">Giới tính</label>
+                    <div class="d-flex">
+                        <div class="form-check w-35">
+                        <input class="form-check-input" type="radio" name="gender"
+                                id="flexRadioDefault1"
+                                value="male"
+                        >
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Nam
+                        </label>
+                        </div>
+                        <div class="form-check w-35">
+                        <input class="form-check-input" type="radio" name="gender"
+                                value="female"
+                                id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Nữ
+                        </label>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-md-5">
+                    <label    class="form-label">Chức vụ</label>
+                    <select class="form-select form-select-lg" style=" font-size: 13px;" name="accountType">
+                        <option value="admin" selected>Admin</option>
+                        <option value="employee">Employee</option>
+                    </select>
+                    </div>
+                    <div class="col-md-6 ms-4 d-flex align-items-end">
+                    <button class="btn btn-danger input-group btn-orange" style="width: 200px;" type="submit">
+                        Xác nhận
+                    </button>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+            </div>
+        </div>
+
+        </div>
+    </form>
+    </div>
